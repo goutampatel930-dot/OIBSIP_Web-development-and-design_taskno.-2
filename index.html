@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goutam Patel | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <h1 class="logo">Goutam Patel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>Hi, I'm Goutam 👋</h2>
+                <h3>Full Stack Developer</h3>
+                <p>I build scalable web applications using modern technologies like React, Node.js and PostgreSQL.</p>
+                <a href="resume.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="hero-img">
+                <img src="profile.jpg" alt="Goutam Patel">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                I am a passionate Full Stack Developer with strong expertise in front-end and back-end development. 
+                I enjoy building modern web applications and continuously improving my problem-solving skills.
+            </p>
+        </div>
+    </section>
+
+   
+    <section id="skills" class="section light-bg reveal">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3 (Advanced)</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React.js</div>
+                <div class="skill-card">Next.js</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">Express.js</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">PostgreSQL</div>
+                <div class="skill-card">REST APIs</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">Responsive Design</div>
+
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="projects" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Online Job Portal</h3>
+                    <p>Full Stack job portal built with Node.js, Express & MongoDB.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Computer Based Examination System</h3>
+                    <p>PHP & MySQL based examination system with admin dashboard.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Landing Page Design</h3>
+                    <p>Modern responsive landing page using HTML & CSS.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="section light-bg reveal">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/goutampatel930" target="_blank">LinkedIn</a>
+                <a href="https://github.com/goutampatel930-dot" target="_blank">GitHub</a>
+                <a href="https://twitter.com/@Goutam930" target="_blank">Twitter (X)</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Goutam Patel | Full Stack Developer</p>
+    </footer>
+
+    <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    reveals.forEach(reveal => {
+        observer.observe(reveal);
+    });
+</script>
+
+</body>
+</html>
